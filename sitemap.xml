@@ -1,83 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/about.html</loc>
-    <lastmod>2026-10-30T13:57:58.038Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/analytical-cycle/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.665Z</lastmod>
   </url>
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/14-uncertainty.html</loc>
-    <lastmod>2026-10-30T13:57:58.209Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r8-the-standards-landscape.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
   </url>
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/12-RIGOUR.html</loc>
-    <lastmod>2026-10-30T13:57:58.209Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r5-quality-assurance-statement.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
   </url>
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/02-analytical-cycle/pages/05-conducting-the-analysis.html</loc>
-    <lastmod>2026-10-30T13:57:58.047Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r3-who-to-ask.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
   </url>
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/02-analytical-cycle/pages/03-customer-engagement.html</loc>
-    <lastmod>2026-10-30T13:57:58.047Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r2-templates-and-documents.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
   </url>
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/02-analytical-cycle/pages/08-review.html</loc>
-    <lastmod>2026-10-30T13:57:58.047Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r18-review-reuse-and-records.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
   </url>
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/04-business-critical-analysis/index.html</loc>
-    <lastmod>2026-10-30T13:57:58.209Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r16-what-makes-work-business-critical.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
   </url>
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/03-responsibilities/pages/10-analyst-responsibilities.html</loc>
-    <lastmod>2026-10-30T13:57:58.157Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r14-meeting-the-standards.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
   </url>
   <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/03-responsibilities/index.html</loc>
-    <lastmod>2026-10-30T13:57:58.155Z</lastmod>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r12-algorithmic-transparency-and-ai.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r10-uncertainty.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/08-business-critical/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/07-deciding-your-assurance-level/score-the-likelihood.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/07-deciding-your-assurance-level/read-your-level.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/07-deciding-your-assurance-level/check-it-applies.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/06-roles/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/06-roles/commissioner.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/06-roles/analysis-senior-responsible-officer.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/04-delivery-and-sign-off/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/03-analysis/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/01-engagement-and-scoping/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.662Z</lastmod>
   </url>
   <url>
     <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/CONTRIBUTE.html</loc>
-    <lastmod>2026-10-30T13:57:58.037Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/index.html</loc>
-    <lastmod>2026-10-30T13:57:58.209Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/01-principles/index.html</loc>
-    <lastmod>2026-10-30T13:57:58.038Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/03-responsibilities/pages/09-commissioner-responsibilities.html</loc>
-    <lastmod>2026-10-30T13:57:58.156Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/03-responsibilities/pages/11-critical-friend.html</loc>
-    <lastmod>2026-10-30T13:57:58.157Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/02-analytical-cycle/index.html</loc>
-    <lastmod>2026-10-30T13:57:58.046Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/02-analytical-cycle/pages/07-approval-and-distribution.html</loc>
-    <lastmod>2026-10-30T13:57:58.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/02-analytical-cycle/pages/04-analysis-design.html</loc>
-    <lastmod>2026-10-30T13:57:58.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/02-analytical-cycle/pages/06-delivery-and-approval.html</loc>
-    <lastmod>2026-10-30T13:57:58.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/13-types-of-analytical-model.html</loc>
-    <lastmod>2026-10-30T13:57:58.209Z</lastmod>
+    <lastmod>2026-11-04T08:31:06.658Z</lastmod>
   </url>
   <url>
     <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/accessibility.html</loc>
-    <lastmod>2026-10-30T13:57:58.038Z</lastmod>
+    <lastmod>2026-11-04T08:31:06.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/about.html</loc>
+    <lastmod>2026-11-04T08:31:06.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/search.html</loc>
+    <lastmod>2026-11-04T08:31:06.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/00-principles/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/02-design/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/04-business-critical-analysis/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/05-review/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/06-roles/analyst.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/06-roles/critical-friend.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/07-deciding-your-assurance-level/after-you-have-your-level.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/07-deciding-your-assurance-level/index.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/07-deciding-your-assurance-level/score-the-impact.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/07-deciding-your-assurance-level/what-your-level-requires.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r1-glossary.html</loc>
+    <lastmod>2026-11-04T08:31:06.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r11-ethics-and-personal-data.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r13-putting-figures-in-the-public-domain.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r15-scoring-the-assurance-level.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r17-roles-independence-and-escalation.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r19-worked-examples.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r20-standards-to-principles-mapping.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r4-standards-and-guidance.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r6-when-something-is-wrong.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-alijo.github.io/nhsbsa-quality-analysis-playbook-dev/guidance/09-resources/r9-what-each-standard-asks-for.html</loc>
+    <lastmod>2026-11-04T08:31:06.664Z</lastmod>
   </url>
 </urlset>

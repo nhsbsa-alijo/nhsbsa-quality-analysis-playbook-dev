@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.20">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="How to raise an issue or send a pull request, and how to add or change a page.">
 
-<title>Producing Quality Analysis</title>
+<title>How to contribute – Producing Quality Analysis</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,14 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5959727ef59c98f181ad02d741f2756b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b85c4a4d4f272114907638ce9d5daca4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
@@ -63,19 +64,19 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./static/logo-nhs.svg" alt="NHS logo" class="navbar-logo light-content">
-    <img src="./static/logo-nhs.svg" alt="NHS logo" class="navbar-logo dark-content">
+    <a href="https://www.nhsbsa.nhs.uk/" class="navbar-brand navbar-brand-logo">
+    <img src="./static/logo-nhs.svg" alt="NHS Business Services Authority" class="navbar-logo light-content">
+    <img src="./static/logo-nhs.svg" alt="NHS Business Services Authority" class="navbar-logo dark-content">
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -84,38 +85,74 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./search.html"> 
+<span class="menu-text">Search</span></a>
+  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-guidance" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Guidance</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-guidance">    
         <li>
-    <a class="dropdown-item" href="./guidance/01-principles/index.html">
- <span class="dropdown-text">Principles</span></a>
+    <a class="dropdown-item" href="./guidance/00-principles/index.html">
+ <span class="dropdown-text">The seven quality principles</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/02-analytical-cycle/index.html">
- <span class="dropdown-text">Analytical Cycle</span></a>
+    <a class="dropdown-item" href="./guidance/07-deciding-your-assurance-level/check-it-applies.html">
+ <span class="dropdown-text">Check the playbook applies</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/03-responsibilities/index.html">
- <span class="dropdown-text">Responsibilities</span></a>
+    <a class="dropdown-item" href="./guidance/01-engagement-and-scoping/index.html">
+ <span class="dropdown-text">Phase 1. Engagement and scoping</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/04-business-critical-analysis/index.html">
- <span class="dropdown-text">Business-Critical Analysis</span></a>
+    <a class="dropdown-item" href="./guidance/02-design/index.html">
+ <span class="dropdown-text">Phase 2. Design</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/12-RIGOUR.html">
- <span class="dropdown-text">RIGOUR</span></a>
+    <a class="dropdown-item" href="./guidance/03-analysis/index.html">
+ <span class="dropdown-text">Phase 3. Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/13-types-of-analytical-model.html">
- <span class="dropdown-text">Types of analytical model</span></a>
+    <a class="dropdown-item" href="./guidance/04-delivery-and-sign-off/index.html">
+ <span class="dropdown-text">Phase 4. Delivery, communication and sign-off</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/14-uncertainty.html">
- <span class="dropdown-text">Uncertainty</span></a>
+    <a class="dropdown-item" href="./guidance/05-review/index.html">
+ <span class="dropdown-text">Phase 5. Review</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/06-roles/index.html">
+ <span class="dropdown-text">Roles and responsibilities</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/07-deciding-your-assurance-level/index.html">
+ <span class="dropdown-text">Analytical Assurance Decision Tool</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/08-business-critical/index.html">
+ <span class="dropdown-text">Business Critical analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/09-resources/r5-quality-assurance-statement.html">
+ <span class="dropdown-text">Writing a quality assurance statement</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/09-resources/r6-when-something-is-wrong.html">
+ <span class="dropdown-text">Correcting a published figure</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/09-resources/r2-templates-and-documents.html">
+ <span class="dropdown-text">NHSBSA templates and documents</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/09-resources/r3-who-to-ask.html">
+ <span class="dropdown-text">Who to ask</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/09-resources/r1-glossary.html">
+ <span class="dropdown-text">Glossary</span></a>
   </li>  
     </ul>
   </li>
@@ -126,16 +163,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:information-outline" style="font-size: 1.5em;" aria-label="Icon information-outline from mdi Iconify.design set." title="Icon information-outline from mdi Iconify.design set."></iconify-icon> About</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./accessibility.html"> 
+<span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:eye-outline" style="font-size: 1.5em;" aria-label="Icon eye-outline from mdi Iconify.design set." title="Icon eye-outline from mdi Iconify.design set."></iconify-icon> Accessibility</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://www.nhsbsa.nhs.uk/nhsbsa-statistics-and-data-science"> 
 <span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:house-outline" style="font-size: 1.5em;" aria-label="Icon house-outline from mdi Iconify.design set." title="Icon house-outline from mdi Iconify.design set."></iconify-icon> NHSBSA Data Science Home Page</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/nhsbsa-data-analytics"> 
-<span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:github" style="font-size: 1.5em;" aria-label="Icon github from mdi Iconify.design set." title="Icon github from mdi Iconify.design set."></iconify-icon> GitHub</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://twitter.com/nhsbsa"> 
-<span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:twitter" style="font-size: 1.5em;" aria-label="Icon twitter from mdi Iconify.design set." title="Icon twitter from mdi Iconify.design set."></iconify-icon> X (formerly Twitter)</span></a>
+<span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:github" style="font-size: 1.5em;" aria-label="Icon github from mdi Iconify.design set." title="Icon github from mdi Iconify.design set."></iconify-icon> NHSBSA Data Analytics on GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -143,21 +180,42 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"></h1>
+        <a class="flex-grow-1 no-decor" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">How to contribute</h1>
         </a>     
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">How to contribute</h1>
+                  <div>
+        <div class="description">
+          How to raise an issue or send a pull request, and how to add or change a page.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-body">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Section">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -166,125 +224,284 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">NHSBSA Producing Quality Analysis Playbook</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/01-principles/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principles</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Analytical Cycle</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">The principles</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/02-analytical-cycle/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analytical Cycle</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/02-analytical-cycle/pages/03-customer-engagement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Customer Engagement/Scoping</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/02-analytical-cycle/pages/04-analysis-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analysis Design</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/02-analytical-cycle/pages/05-conducting-the-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conducting and Checking the Analysis</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/02-analytical-cycle/pages/06-delivery-and-approval.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Delivery of the Analysis</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/02-analytical-cycle/pages/07-approval-and-distribution.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Approval and Distribution</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/02-analytical-cycle/pages/08-review.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Review</span></a>
+  <a href="./guidance/00-principles/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The seven quality principles</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Responsibilities</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">The analytical lifecycle</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/03-responsibilities/pages/09-commissioner-responsibilities.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Commissioner Responsibilities</span></a>
+  <a href="./guidance/analytical-cycle/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The five phases of the analytical lifecycle</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/03-responsibilities/pages/10-analyst-responsibilities.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analyst Responsibilities</span></a>
+  <a href="./guidance/01-engagement-and-scoping/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phase 1. Engagement and scoping</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/03-responsibilities/pages/11-critical-friend.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Critical Friend/Analytical Assurer Responsibilities</span></a>
+  <a href="./guidance/02-design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phase 2. Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/03-analysis/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phase 3. Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/04-delivery-and-sign-off/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phase 4. Delivery, communication and sign-off</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/05-review/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phase 5. Review</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/04-business-critical-analysis/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Business-Critical Analysis</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Additional Guidance</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">The four roles</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/12-RIGOUR.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">RIGOUR</span></a>
+  <a href="./guidance/06-roles/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Roles and responsibilities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/13-types-of-analytical-model.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Types of analytical model</span></a>
+  <a href="./guidance/06-roles/analyst.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The analyst</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/14-uncertainty.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Uncertainty</span></a>
+  <a href="./guidance/06-roles/critical-friend.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The critical friend</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/06-roles/commissioner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The commissioner</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/06-roles/analysis-senior-responsible-officer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Analysis Senior Responsible Officer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Your assurance level</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/07-deciding-your-assurance-level/check-it-applies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Check the playbook applies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/07-deciding-your-assurance-level/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analytical Assurance Decision Tool</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/07-deciding-your-assurance-level/score-the-impact.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 1. Score the impact</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/07-deciding-your-assurance-level/score-the-likelihood.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 2. Score the likelihood</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/07-deciding-your-assurance-level/read-your-level.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 3. Read your level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/07-deciding-your-assurance-level/what-your-level-requires.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 4. What your level requires</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/07-deciding-your-assurance-level/after-you-have-your-level.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">After you have your level</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Business Critical</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/08-business-critical/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Business Critical analysis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Resources</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r1-glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R1. Glossary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r2-templates-and-documents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R2. NHSBSA templates and documents</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r3-who-to-ask.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R3. Who to ask</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r4-standards-and-guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R4. Links to standards and guides</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r5-quality-assurance-statement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R5. Writing a quality assurance statement</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r6-when-something-is-wrong.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R6. Correcting a published figure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r8-the-standards-landscape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R7. Which standards apply to you</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r9-what-each-standard-asks-for.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R8. What each standard asks for</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r10-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R9. Uncertainty, assumptions and limitations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r11-ethics-and-personal-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R10. Data ethics and personal data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r12-algorithmic-transparency-and-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R11. Algorithmic transparency and AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r13-putting-figures-in-the-public-domain.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R12. Publishing analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r14-meeting-the-standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R13. Where each standard is met</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r15-scoring-the-assurance-level.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R14. Why the level is scored as it is</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r16-what-makes-work-business-critical.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R15. Why Business Critical works as it does</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r17-roles-independence-and-escalation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R16. Why the roles work as they do</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r18-review-reuse-and-records.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R17. Why review, reuse and records matter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r19-worked-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R18. Worked examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/09-resources/r20-standards-to-principles-mapping.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R19. Standards to principles mapping</span></a>
   </div>
 </li>
       </ul>
@@ -295,13 +512,11 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-contribute" id="toc-how-to-contribute" class="nav-link active" data-scroll-target="#how-to-contribute">How to contribute</a>
-  <ul class="collapse">
-  <li><a href="#creating-an-issue" id="toc-creating-an-issue" class="nav-link" data-scroll-target="#creating-an-issue">Creating an issue</a></li>
+  <li><a href="#creating-an-issue" id="toc-creating-an-issue" class="nav-link active" data-scroll-target="#creating-an-issue">Creating an issue</a></li>
   <li><a href="#submitting-a-pull-request" id="toc-submitting-a-pull-request" class="nav-link" data-scroll-target="#submitting-a-pull-request">Submitting a pull request</a>
   <ul class="collapse">
   <li><a href="#to-increase-the-likelihood-of-your-pull-request-being-accepted" id="toc-to-increase-the-likelihood-of-your-pull-request-being-accepted" class="nav-link" data-scroll-target="#to-increase-the-likelihood-of-your-pull-request-being-accepted">To increase the likelihood of your pull request being accepted:</a></li>
@@ -314,109 +529,984 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content" tabindex="-1">
+<script>
+  // Skip link. Ported from the NHSBSA Analytical Code Assurance Playbook so the
+  // two playbooks behave consistently.
+  //
+  // WCAG 2.2 2.4.1 Bypass Blocks. It goes to the main content, which is the element a reader
+  // wants, and not to the wrapper round the sidebar and the main content, which is where it went
+  // first and left the next Tab on the first link of the sidebar. The main content is not a
+  // control, so it cannot take focus unless it is told it may, and a link to a fragment only moves
+  // the place the next Tab starts from in some browsers. So the link moves focus itself.
+  (function () {
+    var TARGET = 'quarto-document-content';
+    var a = document.createElement('a');
+    var linkText = document.createTextNode("Skip to main content");
+    a.appendChild(linkText);
+    a.classList.add("skip");
+    a.setAttribute('href', '#' + TARGET);
+    document.body.insertBefore(a, document.body.firstChild);
+
+    a.addEventListener('click', function (event) {
+      var main = document.getElementById(TARGET);
+      if (!main) { return; }
+      event.preventDefault();
+      if (!main.hasAttribute('tabindex')) { main.setAttribute('tabindex', '-1'); }
+      // Focus without scrolling, then scroll to the top of the content. Left to itself, Chromium
+      // centres a focus target that is taller than the window when its top is below the fold,
+      // which at 400 percent zoom dropped the reader half-way down the page. scroll-padding-top
+      // in styles.css keeps the top clear of what is pinned.
+      main.focus({ preventScroll: true });
+      main.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'instant' });
+    });
+
+    // Quarto's navigation script, which runs when the page has loaded, rewrites every link on the
+    // page so that /index.html becomes /. On the twelve pages that are an index.html it turns this
+    // link's address into the folder's, which is not the address that is open, so a click that
+    // was not caught above would load the page again instead of jumping. The plain fragment is
+    // put back once that has run.
+    window.addEventListener('load', function () { a.setAttribute('href', '#' + TARGET); });
+  })();
+</script>
 
 
 
 
-<section id="how-to-contribute" class="level1">
-<h1>How to contribute</h1>
-<p>Hi there! Thank you for considering contributing to the <a href="https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/">NHSBSA Producing Quality Analysis Playbook</a>. The Playbook is meant to serve the D&amp;A community, so contributions from community members themselves are super important in making this a reality!</p>
+
+<p>Hi there! Thank you for considering contributing to the <a href="https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/">published NHSBSA Producing Quality Analysis Playbook site</a>. The Playbook is meant to serve the D&amp;A community, so contributions from community members themselves are super important in making this a reality!</p>
 <section id="creating-an-issue" class="level2">
-<h2 class="anchored" data-anchor-id="creating-an-issue">Creating an issue</h2>
+<h2 data-anchor-id="creating-an-issue">Creating an issue</h2>
 <p>If you think of something worth including, improving, or want to contribute, please <a href="https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook/issues">raise an issue on GitHub</a>.</p>
 </section>
 <section id="submitting-a-pull-request" class="level2">
-<h2 class="anchored" data-anchor-id="submitting-a-pull-request">Submitting a pull request</h2>
+<h2 data-anchor-id="submitting-a-pull-request">Submitting a pull request</h2>
 <p>Please submit new contributions via a <a href="https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook/pulls">pull request</a>:</p>
 <ol type="1">
 <li><a href="https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook/fork">Fork</a> or clone the repository</li>
-<li>If you want to run the page on your machine, configure and install the dependencies. See the <a href="./README.md">README</a> for details.</li>
+<li>If you want to run the page on your machine, configure and install the dependencies. See the <a href="https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook#readme">README</a> for details.</li>
 <li>Create a new branch: (e.g.&nbsp;<code>git checkout -b my-branch-name</code>)</li>
 <li><a href="#getting-started-with-development">Make your change</a></li>
 <li>Push to your fork and <a href="https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook/pulls">submit a pull request</a></li>
 </ol>
 <p>Your pull request will then be reviewed. You may receive some feedback and suggested changes before it can be approved and your pull request merged.</p>
 <section id="to-increase-the-likelihood-of-your-pull-request-being-accepted" class="level3">
-<h3 class="anchored" data-anchor-id="to-increase-the-likelihood-of-your-pull-request-being-accepted">To increase the likelihood of your pull request being accepted:</h3>
+<h3 data-anchor-id="to-increase-the-likelihood-of-your-pull-request-being-accepted">To increase the likelihood of your pull request being accepted:</h3>
 <ul>
 <li>If you are making visual changes, include a screenshot of what the affected element looks like, both before and after. <!-- TODO: add a style guide --> <!-- - Follow the [style guide][style]. --></li>
+<li>Give every table a caption: a line that starts with <code>:</code> directly under the table, after a blank line. A first column of bold labels becomes row headers on its own.</li>
 <li>Keep your change as focussed as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.</li>
-<li>Write <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">good commit messages</a>.</li>
+<li>Write <a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">good commit messages</a>.</li>
 </ul>
 </section>
 </section>
 <section id="getting-started-with-development" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started-with-development">Getting started with development</h2>
+<h2 data-anchor-id="getting-started-with-development">Getting started with development</h2>
 <section id="environments" class="level3">
-<h3 class="anchored" data-anchor-id="environments">Environments</h3>
+<h3 data-anchor-id="environments">Environments</h3>
 <section id="github-codespaces" class="level4">
-<h4 class="anchored" data-anchor-id="github-codespaces">Github Codespaces</h4>
+<h4 data-anchor-id="github-codespaces">Github Codespaces</h4>
 <p>The <strong>easiest way is just to open the repo in <a href="https://github.com/features/codespaces">Github Codespaces</a></strong> - you can then make your changes, run the website to check it, and commit those back all within a VSCode environment.</p>
 </section>
 <section id="working-locally" class="level4">
-<h4 class="anchored" data-anchor-id="working-locally">Working locally</h4>
+<h4 data-anchor-id="working-locally">Working locally</h4>
 <p>If you don’t want to use Github codespaces (or can’t because it’s blocked, or you’ve run out of credits), then you can make changes to the repo locally on your machine.</p>
 </section>
 </section>
 <section id="installing-dependencies" class="level3">
-<h3 class="anchored" data-anchor-id="installing-dependencies">Installing dependencies</h3>
-<p>See the <a href="./README.md">README</a> for guidance on installing the dependencies and getting started with development.</p>
+<h3 data-anchor-id="installing-dependencies">Installing dependencies</h3>
+<p>See the <a href="https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook#readme">README</a> for guidance on installing the dependencies and getting started with development.</p>
 </section>
 <section id="adding-or-editing-content" class="level3">
-<h3 class="anchored" data-anchor-id="adding-or-editing-content">Adding or editing content</h3>
-<section id="to-add-a-new-page-to-within-the-existing-structure" class="level4">
-<h4 class="anchored" data-anchor-id="to-add-a-new-page-to-within-the-existing-structure">To add a new page to within the existing structure</h4>
+<h3 data-anchor-id="adding-or-editing-content">Adding or editing content</h3>
+<p>Each section is one directory under <code>guidance</code>, numbered so the order is visible, holding a single <code>index.qmd</code>. The directory name carries the number, so <code>guidance/07-deciding-your-assurance-level/</code> is section 7. A section with more than one page keeps them beside its <code>index.qmd</code>, which is what the roles directory and the assurance level directory both do.</p>
+<p>One directory is deliberately not numbered. <code>guidance/analytical-cycle/</code> is the front page for the five phases rather than a section of its own, and a number on it would say it was a sixth phase.</p>
+<p>Three things are named in one place each, and all three need updating together when a section is added or renamed. Miss one and the page still builds, so nothing tells you:</p>
+<table class="caption-top table">
+<caption>The three places that name a page</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th scope="col">Item</th>
+<th scope="col">Where</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th scope="row">Whether the page is rendered at all</th>
+<td>the <code>render:</code> list in <code>_quarto.yml</code></td>
+</tr>
+<tr class="even">
+<th scope="row">Where it appears in the left sidebar</th>
+<td>the <code>sidebar:</code> section of <code>_quarto.yml</code></td>
+</tr>
+<tr class="odd">
+<th scope="row">Where it appears in the Guidance menu</th>
+<td>the <code>navbar:</code> section of <code>_quarto.yml</code>, which names the spine only, so a page can be correctly absent from it</td>
+</tr>
+</tbody>
+</table>
+<section id="to-edit-an-existing-page" class="level4">
+<h4 data-anchor-id="to-edit-an-existing-page">To edit an existing page</h4>
 <ol type="1">
-<li>Navigate to the relevant subfolder within <code>guidance</code> (e.g.&nbsp;<code>guidance/03-responsibilities/pages</code>)</li>
-<li>Add a <a href="https://quarto.org/docs/get-started/hello/rstudio.html">qmd</a> file with the following header fields: <code>---  title: "This is the title of your page"  description: "This is a brief description of your page"  image-alt: "This text will show if your image can't be displayed"  image: &lt;name of a .jpg file stored in the same subfolder to use for the card&gt;  ---</code></li>
-<li>Add the content below the header using standard markdown syntax.</li>
-<li>A link to the page will be added as a card on the landing page. If you want to show an image on the card, add a jpeg file to the same subfolder as the content and include the name in the header fields as above.</li>
+<li>Open the <code>index.qmd</code> in that section’s directory and edit it as markdown.</li>
+<li>Text that belongs on more than one page lives in <code>guidance/_partials/</code> and is pulled in with <code>{{&lt; include /guidance/_partials/name.qmd &gt;}}</code>. Edit the partial, not the copies. The include path starts from the project root, because a partial is included at more than one depth.</li>
 <li>Once you are happy with your changes <a href="#submitting-a-pull-request">submit a pull request!</a></li>
 </ol>
 </section>
-<section id="to-add-a-new-page-within-a-new-section" class="level4">
-<h4 class="anchored" data-anchor-id="to-add-a-new-page-within-a-new-section">To add a new page within a new section</h4>
+<section id="to-add-a-new-section" class="level4">
+<h4 data-anchor-id="to-add-a-new-section">To add a new section</h4>
 <ol type="1">
-<li>Create the a subfolder within <code>guidance</code> and name it appropriately (e.g.&nbsp;<code>04-business-critical-models</code>). Note that the sections will be ordered in the dropdown on the website according to the numbers in front of the subfolders (i.e.&nbsp;first <code>01-</code> then <code>02-</code> and so on)</li>
-<li>Add an <code>index.qmd</code> file to the subfolder (you can use one of the existing files as an example!)</li>
-<li>Follow the steps above to add the new page within the section you’ve just created.</li>
+<li>Create a subfolder within <code>guidance</code>, numbered so it sorts where you want it (e.g. <code>14-something-new</code>).</li>
+<li>Add an <code>index.qmd</code> to it with this header: <code>---  title: "The title of your page"  description: "One sentence saying what the page is for"  ---</code> The title, the sidebar label and the navbar label should all say the same thing, so a reader arrives at the page they expected. The description is the browser meta description.</li>
+<li>Add the content below the header using standard markdown syntax.</li>
+<li>Add the page in all four places in the table above.</li>
+<li>Render locally with <code>quarto render</code> and check the page appears in the sidebar, in the menu and in the contents table.</li>
 <li>Once you are happy with your changes <a href="#submitting-a-pull-request">submit a pull request!</a></li>
 </ol>
+</section>
+<section id="before-you-open-the-pull-request" class="level4">
+<h4 data-anchor-id="before-you-open-the-pull-request">Before you open the pull request</h4>
+<p>Run the checks. They are quick and they assert things that are easy to break without noticing:</p>
+<pre><code>quarto render &amp;&amp; bash checks/run-all.sh</code></pre>
+<p>That runs all of them. Several read the built site, so render first. If you only want the two that most often catch a new page, they are <code>checks/accessibility.py</code> and <code>checks/links.py</code>, and the first needs a render.</p>
 </section>
 </section>
 </section>
 <section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<h2 data-anchor-id="resources">Resources</h2>
 <ul>
-<li><a href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects">Contributing to Projects</a></li>
-<li><a href="https://help.github.com/articles/using-pull-requests/">Using Pull Requests</a></li>
+<li><a href="https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project">Contributing to Projects</a></li>
+<li><a href="https://docs.github.com/en/pull-requests/reference/pull-requests">Using Pull Requests</a></li>
 <li><a href="https://help.github.com">GitHub Help</a></li>
 </ul>
 </section>
 <section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<h2 data-anchor-id="acknowledgements">Acknowledgements</h2>
 <p>Thank you to the <a href="https://github.com/NHSDigital/rap-community-of-practice/blob/35adb3c15ba3c34fe7d5ab3baede760504ceb7a1/CONTRIBUTE.md">NHS England RAP Community of Practice</a> from which this guide took heavy inspiration!</p>
 
 
 </section>
-</section>
 
 </main> <!-- /main -->
+<script>
+  // 1. Handle 'i' tags - these are added dynamically by quarto. They can have 
+  //    the 'aria-hidden' attribute set to 'true', but quarto does not make them
+  //    unfocusable. This script handles this by setting the 'tabindex' to '-1'.
+  
+  // We observe the entire body for changes to the DOM, since the tags of
+  // interest will be added dynamically and hence we cannot identify them before
+  // they appear.
+  const iTagTargetNode = document.body;
+
+  // We want our observer to be informed when any tag is added within the body. 
+  // For direct children it is 'childList', while for nested children it is
+  // 'subtree'.
+  const iTagConfig = { childList: true, subtree: true };
+
+  // The observer callback receives an array of mutation records, over which we
+  // want to iterate.
+  const forEachMutationRecord = func => 
+    records => 
+      records.forEach(func);
+
+  // Each mutation record holds a node list of added nodes, over which we also
+  // want to iterate.
+  const forEachAddedNode = func => 
+    ({ addedNodes }) => 
+      Array.from(addedNodes).forEach(func);
+  
+  // We want to mutate 'i' nodes that have 'aria-hidden' set to 'true'.
+  const iTagMutate = node => {
+    if (node.tagName === 'I' && node.getAttribute('aria-hidden')) {
+      node.setAttribute('tabindex', '-1');
+    }
+  };
+
+  // The mutation observer gets instantiated with a callback...
+  const iTagObserver = new MutationObserver(
+    forEachMutationRecord(
+      forEachAddedNode(
+      	 iTagMutate)
+      )
+    );
+
+  // ... and registered with the body element to observe.
+  iTagObserver.observe(iTagTargetNode, iTagConfig);
+  
+  
+  // 2. Handle callouts having the 'aria-expanded' attribute - this is not a 
+  //    valid attribute for callouts. Quarto will automatically add this 
+  //    attribute whenever a callout eloement is created and will also add it if
+  //    not already present whenever a callout is expanded or collapsed. This
+  //    script handles this by:
+  //      a. removing the attribute initially
+  //      b. observing all callout elements and again removing it whenever it is
+  //         added back by quarto
+  
+  // The callout elements already exist, so we can observe just relevant nodes.
+  const calloutTargetNodes = document.querySelectorAll('.callout-header');
+  
+  // We only need to observe attribute mutations, since the callouts will be
+  // permanently in the DOM.
+  var calloutConfig = { attributes: true };
+  
+  // We want to remove 'aria-expanded'. Every mutation observed will be relevant,
+  // so no checks are needed.
+  const calloutMutate = mutation => mutation.target.removeAttribute("aria-expanded");
+  
+  // The mutation observer gets instantiated with a callback.
+  const calloutObserver = new MutationObserver(
+    forEachMutationRecord(
+      calloutMutate
+    )
+  );
+    
+  // Initially remove attribute but also add observers to catch the attribute
+  // being added back.
+  calloutTargetNodes.
+    forEach(function(node){
+      node.removeAttribute("aria-expanded");
+      calloutObserver.observe(node, calloutConfig);
+    });
+</script>
+<script>
+  // 3. Names, roles and states that Quarto writes wrongly. Each is a WCAG 2.2 4.1.2 Name, Role,
+  //    Value failure or a neighbour of one, and each is mended here because it is generated, so
+  //    there is nothing in a page to edit. The work is done as soon as the page is parsed and once
+  //    more when it has loaded, because Quarto's own scripts run in between and write some of it.
+  (function () {
+    var each = function (selector, fn, root) {
+      Array.prototype.forEach.call((root || document).querySelectorAll(selector), fn);
+    };
+    // Where a link goes, as a path that does not depend on how it was written. Quarto rewrites
+    // every link's /index.html to / when the page loads.
+    var pathOf = function (a) {
+      return a.pathname.replace(/index\.html$/, '').replace(/\/+$/, '/');
+    };
+
+    function iconsAreDecorative() {
+      // The four right-hand links in the navbar draw a small picture beside words that already
+      // say what the link is. The picture is an <iconify-icon> that Quarto's shortcode gives
+      // role="img", a label naming the icon set and a title that shows as a tooltip, so the link
+      // was announced as "Icon information-outline from mdi Iconify.design set. About". The
+      // picture stays; it just stops being read out. WCAG 1.1.1 Non-text Content and 2.4.4.
+      each('iconify-icon', function (icon) {
+        icon.removeAttribute('role');
+        icon.removeAttribute('aria-label');
+        icon.removeAttribute('title');
+        icon.setAttribute('aria-hidden', 'true');
+      });
+    }
+
+    function currentPage() {
+      // Quarto marks the Home link in the navbar as the current page on every page, because it
+      // takes any page below the folder of the link to be inside it, and every page is. It marks
+      // the page you are actually on in the sidebar with a class and nothing else. So the
+      // navbar's mark is taken off every link that is not this page, and the page's own link is
+      // given aria-current. There is one such link: the one in the sidebar if the page has an
+      // entry there, otherwise the one in the navbar. WCAG 4.1.2 and 1.3.1.
+      var here = location.pathname.replace(/index\.html$/, '').replace(/\/+$/, '/');
+      each('[aria-current]', function (el) { el.removeAttribute('aria-current'); });
+      each('.navbar a.nav-link', function (a) {
+        // A link that opens a menu goes nowhere. Quarto's script makes its "#" into the address of
+        // the page it is on, so it has to be ruled out by what it is and not by how it is written.
+        var opensMenu = a.classList.contains('dropdown-toggle') || /#$/.test(a.href);
+        var match = !opensMenu && !!a.getAttribute('href') &&
+                    a.protocol === location.protocol && a.host === location.host &&
+                    pathOf(a) === here;
+        a.classList.toggle('active', match);
+      });
+      var own = null;
+      each('#quarto-sidebar a.sidebar-link[href]', function (a) {
+        if (!own && pathOf(a) === here) { own = a; }
+      });
+      if (!own) {
+        each('.navbar a.nav-link.active', function (a) { if (!own) { own = a; } });
+      }
+      if (own) { own.setAttribute('aria-current', 'page'); }
+    }
+
+    function roles() {
+      // A button may not take the role of a menu, and this one has no menu items in it. It opens
+      // the list of links below it, which is what a button with aria-expanded already says.
+      each('button.navbar-toggler[role]', function (b) { b.removeAttribute('role'); });
+      // The Guidance heading in the navbar opens a menu, so it is a button that does something
+      // and not a link to the page it is on, and a button answers to Space as well as Enter.
+      each('a.dropdown-toggle[role=link], a.dropdown-toggle[href="#"]', function (a) {
+        a.setAttribute('role', 'button');
+        if (!a._spaceBound) {
+          a._spaceBound = true;
+          a.addEventListener('keydown', function (event) {
+            if (event.key === ' ' || event.key === 'Spacebar') {
+              event.preventDefault();
+              a.click();
+            }
+          });
+        }
+      });
+    }
+
+    function landmarks() {
+      // Navigation landmarks, each named for what is in it, because a reader moving between
+      // landmarks hears "navigation" five times and cannot tell which is which. WCAG 1.3.1 and
+      // 2.4.1, and the ARIA rule that two landmarks of one kind carry different names.
+      var named = [
+        ['nav.navbar', 'Main menu'],
+        ['nav.quarto-secondary-nav', 'Page menu'],
+        ['nav#quarto-sidebar', 'Playbook sections'],
+        ['nav.page-navigation', 'Previous and next page']
+      ];
+      named.forEach(function (pair) {
+        each(pair[0], function (nav) {
+          if (!nav.hasAttribute('aria-label') && !nav.hasAttribute('aria-labelledby')) {
+            nav.setAttribute('aria-label', pair[1]);
+          }
+        });
+      });
+      each('nav#TOC', function (nav) {
+        if (!nav.hasAttribute('aria-label') && !nav.hasAttribute('aria-labelledby') &&
+            document.getElementById('toc-title')) {
+          nav.setAttribute('aria-labelledby', 'toc-title');
+        }
+      });
+      // The page title block is a <header> outside the main content, so a screen reader finds a
+      // second banner on the page after the one that holds the navigation bar. It stops being a
+      // banner, and becomes a region named by the page's own title, so that the title and the
+      // description under it are inside a landmark and not loose between two of them.
+      each('header#title-block-header', function (h) {
+        var title = h.querySelector('h1');
+        if (title && !title.id) { title.id = 'pb-page-title'; }
+        if (title) {
+          h.setAttribute('role', 'region');
+          h.setAttribute('aria-labelledby', title.id);
+        } else {
+          h.setAttribute('role', 'none');
+        }
+      });
+      // The page title on a narrow screen is a link that opens the sidebar, and Quarto gives it
+      // role="navigation", a label, and an expanded state that no link can have. The button
+      // beside it does the same job for a keyboard and for a screen reader, so this one is left as
+      // plain text that a pointer can also press.
+      each('a.flex-grow-1.no-decor', function (a) {
+        ['role', 'aria-label', 'aria-expanded', 'aria-controls'].forEach(function (name) {
+          a.removeAttribute(name);
+        });
+      });
+    }
+
+    function pagination() {
+      // Previous and Next are drawn by the stylesheet over the page's name, and the link's name
+      // was the page's name alone, so somebody who says "click Previous" to a voice control, or
+      // who listens for which way a link goes, was told nothing. The name now begins with the words
+      // that are on the screen. WCAG 2.5.3 Label in Name.
+      [['.nav-page-previous', 'Previous'], ['.nav-page-next', 'Next']].forEach(function (pair) {
+        each('nav.page-navigation ' + pair[0] + ' a.pagination-link', function (a) {
+          var text = a.querySelector('.nav-page-text');
+          var title = (text ? text.textContent : a.textContent).replace(/\s+/g, ' ').trim();
+          if (title) { a.setAttribute('aria-label', pair[1] + ' ' + title); }
+        });
+      });
+    }
+
+    function soleLinks() {
+      // A link that is the whole of its list item or table cell is a target on its own, and is
+      // given room to be hit (see the 2.5.5 rule in styles.css). A link in the middle of a
+      // sentence is not, and CSS cannot tell the two apart because it does not see text. A few
+      // words round the link, such as a full stop or "see", do not make it part of a sentence.
+      each('main li > a, main td > a, main th > a', function (a) {
+        var parent = a.parentElement;
+        var around = parent.textContent.replace(/\s+/g, ' ').trim().length -
+                     a.textContent.replace(/\s+/g, ' ').trim().length;
+        a.classList.toggle('pb-sole-link', around <= 8);
+      });
+    }
+
+    function menuButtonFirst() {
+      // On a narrow screen the menu button is drawn to the left of the logo, and Quarto writes it
+      // after the logo, so Tab went from the middle of the bar to its left end. The button is
+      // moved to where it is drawn. WCAG 2.4.3 Focus Order and 1.3.2 Meaningful Sequence.
+      each('.navbar-container', function (bar) {
+        var brand = bar.querySelector(':scope > .navbar-brand-container');
+        var button = bar.querySelector(':scope > button.navbar-toggler');
+        if (brand && button && (brand.compareDocumentPosition(button) & Node.DOCUMENT_POSITION_FOLLOWING)) {
+          bar.insertBefore(button, brand);
+        }
+      });
+    }
+
+    function hashLinks() {
+      // Quarto's navigation script makes every link's /index.html into /, which on the twelve pages
+      // that are an index.html turns a link to a place on this page into a link to the folder. A
+      // keyboard user who presses Enter on one then loads the page again instead of jumping, and
+      // the address changes under them. A link to a place on this page is put back to the place.
+      var here = pathOf(location);
+      each('a[href*="#"]', function (a) {
+        if (a.hash && a.origin === location.origin && pathOf(a) === here &&
+            a.getAttribute('href').charAt(0) !== '#') {
+          a.setAttribute('href', a.hash);
+        }
+      });
+    }
+
+    function all() {
+      iconsAreDecorative();
+      currentPage();
+      roles();
+      landmarks();
+      pagination();
+      soleLinks();
+      menuButtonFirst();
+      hashLinks();
+    }
+    all();
+    window.addEventListener('load', all);
+  })();
+</script>
+<script>
+  document.querySelectorAll('.callout-header').
+    forEach(function(element){
+      element.removeAttribute("aria-expanded");
+    });
+</script>
+<script>
+  // The NHS responsive table. On a phone a table of three or more columns does not fit, and
+  // scrolling it sideways means reading a row a few words at a time with the start of it out of
+  // sight. Below 641 pixels, the NHS design system's breakpoint for it, each row is drawn as a
+  // block instead, one cell under another, with the name of the cell's column above it. On a wider
+  // screen, and on paper, it is the grid it always was. The stylesheet does the drawing; this adds
+  // what the drawing needs.
+  //
+  // Two things are added. The column's name, in each body cell, in a span hidden from a screen
+  // reader: a screen reader already announces the column header, and would otherwise read the name
+  // twice. And the table's roles, written out. A table drawn as blocks loses its table semantics
+  // in some browsers, so a screen reader would stop announcing rows and columns at exactly the
+  // width where the reader most needs them. WCAG 2.2 1.3.1 and 1.4.10.
+  //
+  // It is added here rather than written into the pages so that the PDF and Word copies, which are
+  // built from the pages, and the search index do not carry every column name again in every cell.
+  // Without JavaScript a wide table scrolls in its own region as before.
+  //
+  // A table is left as it is where it has fewer than three columns, which fit on a phone, or where a
+  // cell spans rows or columns, which a stack of blocks cannot show.
+  (function () {
+    function stack(table) {
+      var heads = table.querySelectorAll(':scope > thead > tr > th');
+      if (heads.length < 3) return;
+      if (table.querySelector('[rowspan]:not([rowspan="1"]), [colspan]:not([colspan="1"])')) return;
+      var names = Array.prototype.map.call(heads, function (th) {
+        return th.textContent.replace(/\s+/g, ' ').trim();
+      });
+      table.classList.add('pb-stack');
+      table.setAttribute('role', 'table');
+      table.querySelectorAll(':scope > thead, :scope > tbody').forEach(function (g) {
+        g.setAttribute('role', 'rowgroup');
+      });
+      table.querySelectorAll(':scope > thead > tr, :scope > tbody > tr').forEach(function (tr) {
+        tr.setAttribute('role', 'row');
+      });
+      heads.forEach(function (th) { th.setAttribute('role', 'columnheader'); });
+      table.querySelectorAll(':scope > tbody > tr').forEach(function (tr) {
+        Array.prototype.forEach.call(tr.children, function (cell, i) {
+          cell.setAttribute('role', cell.tagName === 'TH' ? 'rowheader' : 'cell');
+          if (!names[i] || cell.querySelector(':scope > .pb-stack__heading')) return;
+          var label = document.createElement('span');
+          label.className = 'pb-stack__heading';
+          label.setAttribute('aria-hidden', 'true');
+          label.textContent = names[i];
+          cell.insertBefore(label, cell.firstChild);
+        });
+      });
+    }
+
+    function run() { document.querySelectorAll('main table').forEach(stack); }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', run);
+    } else {
+      run();
+    }
+  })();
+</script>
+<script>
+  // WCAG 2.2 1.4.10 Reflow, at AA. A data table is one of the exceptions the criterion allows to
+  // need two dimensions, so a wide table may scroll sideways. What is not allowed is the whole
+  // page scrolling with it, which is what happens when a twelve column table sits directly in the
+  // prose on a phone.
+  //
+  // Each table that is wider than the space it has is put in its own scrolling region. The region
+  // is only made focusable when it actually scrolls, because a scrollable region that cannot be
+  // reached from the keyboard fails 2.1.1 Keyboard, and a tab stop on a table that fits is just
+  // noise for anyone tabbing through the page.
+  //
+  // A code block gets the same treatment, for the same reason. `main pre` scrolls sideways in
+  // the stylesheet, which makes it a scrollable region, and a scrollable region with no tab stop
+  // is content somebody using a keyboard cannot read the end of.
+  (function () {
+    // The name of a scrolling region is what a screen reader announces on reaching it, and
+    // what they hear when they list the regions on the page, so it has to say which table it is
+    // and no two on a page may say the same. The table's own caption is the name. A table with no
+    // caption is named for the nearest heading above it, and for the page title where there is no
+    // heading above it. WCAG 2.2 4.1.2 Name, Role, Value and 1.3.1.
+    function headingFor(el) {
+      while (el) {
+        var prev = el.previousElementSibling;
+        while (prev) {
+          if (/^H[1-6]$/.test(prev.tagName)) return prev.textContent.replace(/\s+/g, ' ').trim();
+          prev = prev.previousElementSibling;
+        }
+        el = el.parentElement;
+        if (el && el.tagName === 'MAIN') break;
+      }
+      var h1 = document.querySelector('h1.title') || document.querySelector('h1');
+      return h1 ? h1.textContent.replace(/\s+/g, ' ').trim() : document.title;
+    }
+
+    function baseName(el) {
+      var caption = el.tagName === 'TABLE' ? el.querySelector(':scope > caption') : null;
+      var text = caption ? caption.textContent.replace(/\s+/g, ' ').trim() : '';
+      if (text) return text;
+      return headingFor(el) + (el.tagName === 'TABLE' ? ', table' : ', code');
+    }
+
+    // One name for each table and code block on the page, in page order, with a number added to
+    // any name that two of them share ("The documentation stack, table 1 of 2").
+    function namesFor(items) {
+      var base = items.map(baseName);
+      var total = {}, seen = {};
+      base.forEach(function (n) { total[n] = (total[n] || 0) + 1; });
+      return items.map(function (el, i) {
+        var n = base[i];
+        if (total[n] < 2) return n;
+        seen[n] = (seen[n] || 0) + 1;
+        return n + ' ' + seen[n] + ' of ' + total[n];
+      });
+    }
+
+    function names() {
+      var items = Array.prototype.slice.call(document.querySelectorAll('main table, main pre'));
+      var out = new Map();
+      namesFor(items).forEach(function (n, i) { out.set(items[i], n); });
+      return out;
+    }
+
+    function wrap(labels) {
+      document.querySelectorAll('main table').forEach(function (table) {
+        var box = table.closest('.table-scroll');
+        if (!box) {
+          box = document.createElement('div');
+          box.className = 'table-scroll';
+          table.parentNode.insertBefore(box, table);
+          box.appendChild(table);
+        }
+        var over = box.scrollWidth - box.clientWidth;
+        if (over > 1) {
+          box.style.overflowX = '';
+          box.setAttribute('role', 'region');
+          box.setAttribute('tabindex', '0');
+          box.setAttribute('aria-label', labels.get(table));
+        } else {
+          box.removeAttribute('role');
+          box.removeAttribute('tabindex');
+          box.removeAttribute('aria-label');
+          // A pixel of overflow is rounding, and does not earn a tab stop. A box that still scrolls
+          // by it but cannot be reached from the keyboard fails 2.1.1, so it is not left able to.
+          box.style.overflowX = over > 0 ? 'hidden' : '';
+        }
+      });
+    }
+
+    function wrapPre(labels) {
+      document.querySelectorAll('main pre').forEach(function (pre) {
+        if (pre.scrollWidth > pre.clientWidth + 1) {
+          pre.setAttribute('role', 'region');
+          pre.setAttribute('tabindex', '0');
+          if (!pre.getAttribute('aria-label')) {
+            pre.setAttribute('aria-label', labels.get(pre));
+          }
+        } else {
+          pre.removeAttribute('role');
+          pre.removeAttribute('tabindex');
+          pre.removeAttribute('aria-label');
+        }
+      });
+    }
+
+    function all() { var labels = names(); wrap(labels); wrapPre(labels); }
+
+    all();
+    // A table inside a closed description only gets its width when the description is opened,
+    // and the viewport can change under the reader at any time.
+    window.addEventListener('resize', all);
+    document.querySelectorAll('details').forEach(function (d) { d.addEventListener('toggle', all); });
+  })();
+</script>
+<script>
+  // A filter for the glossary. The glossary is ninety-odd rows in letter groups, and the way to a
+  // term was to scroll or to use the browser's own find. This puts a labelled box above it: what is
+  // typed narrows the rows to those whose term or meaning contains it, and a letter group with no
+  // row left is hidden with its heading.
+  //
+  // It is built here, into an empty placeholder the glossary page carries, so that a page without
+  // JavaScript, the PDF, the Word copy and the search index have no box that does nothing. It does
+  // nothing on a page without the placeholder.
+  //
+  // How many rows are showing is a status message, announced without moving focus (WCAG 2.2 4.1.3).
+  // It says nothing on load, so it is heard only when the reader has typed. A search that matches
+  // nothing says so, rather than leaving an empty page. The box is a plain input with a visible
+  // label and a hint, styled as the search page's box is.
+  (function () {
+    function run() {
+      var slot = document.getElementById('pb-glossary-filter');
+      if (!slot) return;
+      var rows = Array.prototype.slice.call(document.querySelectorAll('main tbody tr'));
+      if (!rows.length) return;
+      var texts = rows.map(function (tr) { return tr.textContent.replace(/\s+/g, ' ').toLowerCase(); });
+      var sections = Array.prototype.slice.call(document.querySelectorAll('main section'))
+        .filter(function (s) { return s.querySelector('tbody tr'); });
+
+      slot.className = 'pb-search pb-filter';
+      slot.innerHTML =
+        '<label for="pb-glossary-q"><strong>Filter the glossary</strong></label>' +
+        '<p class="pb-search-hint" id="pb-glossary-hint">Type part of a term or of its meaning. ' +
+        'The list narrows as you type.</p>' +
+        '<div class="pb-search-row"><input type="search" id="pb-glossary-q" autocomplete="off" ' +
+        'spellcheck="false" aria-describedby="pb-glossary-hint"></div>' +
+        '<p class="pb-search-count" id="pb-glossary-count" role="status" aria-live="polite"></p>';
+      var box = document.getElementById('pb-glossary-q');
+      var count = document.getElementById('pb-glossary-count');
+
+      function filter() {
+        var q = box.value.replace(/\s+/g, ' ').trim().toLowerCase();
+        var shown = 0;
+        rows.forEach(function (tr, i) {
+          var on = !q || texts[i].indexOf(q) !== -1;
+          tr.hidden = !on;
+          if (on) shown++;
+        });
+        sections.forEach(function (s) {
+          s.hidden = !Array.prototype.some.call(s.querySelectorAll('tbody tr'), function (tr) { return !tr.hidden; });
+        });
+        if (!q) {
+          count.textContent = 'Showing all ' + rows.length + ' entries';
+        } else if (!shown) {
+          count.textContent = 'No entry matches "' + box.value.trim() + '". Clear the box to see them all.';
+        } else {
+          count.textContent = 'Showing ' + shown + ' of ' + rows.length + ' entries';
+        }
+      }
+      box.addEventListener('input', filter);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', run);
+    } else {
+      run();
+    }
+  })();
+</script>
+<script>
+  // How tall the fixed navigation bar and the title band are. Quarto measures the bar in
+  // JavaScript to place the sticky sidebars, and writes it as an inline `top` rather than as
+  // anything CSS can read, so this measures both again and publishes them as custom properties.
+  // styles.css decides whether either is pinned at the screen size in front of the reader, and
+  // turns these two heights into the offsets that everything else follows (--pb-header and
+  // --pb-pinned). They are measured again through a resize, through the bar wrapping onto a second
+  // line at narrower widths, and through the text size changing, because the heights change with
+  // all three.
+  (function () {
+    var root = document.documentElement;
+    var header = document.querySelector('#quarto-header');
+    var title = document.querySelector('#title-block-header.quarto-title-block');
+
+    function measure() {
+      var h = header ? Math.round(header.getBoundingClientRect().height) : 0;
+      var t = title ? Math.round(title.getBoundingClientRect().height) : 0;
+      root.style.setProperty('--pb-header-h', h + 'px');
+      root.style.setProperty('--pb-title-h', t + 'px');
+    }
+    measure();
+    addEventListener('resize', measure);
+    // Fonts land after first paint and change the height of both bars.
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(measure); }
+    if (window.ResizeObserver) {
+      var observer = new ResizeObserver(measure);
+      if (header) { observer.observe(header); }
+      if (title) { observer.observe(title); }
+    }
+
+    // How much of the top of the screen is covered right now: the bar if it is fixed and the band
+    // if it is stuck. Below 992px wide, or on a short screen, neither is, and this is zero.
+    function pinned() {
+      var total = 0;
+      [header, title].forEach(function (el) {
+        if (!el) { return; }
+        var position = getComputedStyle(el).position;
+        if (position === 'fixed' || position === 'sticky') {
+          total += el.getBoundingClientRect().height;
+        }
+      });
+      return total;
+    }
+
+    // Bring a control reached by keyboard wholly into view. A browser counts a control as in view
+    // as soon as any part of it is, and does not move the page for one that is half below the
+    // bottom edge or half past the side of the table it sits in. That leaves its focus ring cut
+    // off, and the diagrams, the phase cards and the tables are far taller than any other control.
+    // WCAG 2.2 2.4.11 Focus Not Obscured at AA, and 2.4.12 at AAA, which asks that no part of it
+    // is hidden. A control that fits is moved the least distance that shows all of it, below
+    // whatever is pinned (the offset is scroll-padding-top in styles.css); one that is taller than
+    // the room there is has its top brought to the top of that room, so its first line and the
+    // start of its ring are what is seen. The move is instant, because the eye is already on the
+    // control. The navigation bar is fixed, so there is nothing to scroll to, and a pointer click
+    // is not keyboard focus, so neither is moved. A control in a sidebar scrolls the sidebar's own
+    // pane, which is what keeps the last link in it from sitting half under the pane's edge.
+    document.addEventListener('focusin', function (e) {
+      var el = e.target;
+      if (!el || !el.matches || el.matches('[tabindex="-1"]')) { return; }
+      if (!el.matches(':focus-visible')) { return; }
+      if (el.closest('#quarto-header, a.skip')) { return; }
+      var room = window.innerHeight - pinned() - 16;
+      var tall = el.getBoundingClientRect().height > room;
+      el.scrollIntoView({ block: tall ? 'start' : 'nearest', inline: 'nearest', behavior: 'instant' });
+    });
+
+    // When the address gains a fragment, Quarto moves the page up by the height of the navigation
+    // bar, on the assumption that the bar is fixed over the top of it. Where the bar is fixed
+    // that is still what happens. Where it is not, it is a block at the top of the page, and
+    // moving up by its height leaves the target that far down the screen, which on a 256px screen
+    // is most of the way to the bottom. This runs first and stops Quarto's own listener there.
+    window.addEventListener('hashchange', function (event) {
+      if (header && getComputedStyle(header).position !== 'fixed') {
+        event.stopImmediatePropagation();
+      }
+    });
+  })();
+</script>
+<script>
+// The sidebar bands open and close, so a reader meets five labels rather than twenty-one links
+// and opens the one they want. Quarto builds the band toggle as an <a> with no href, no
+// tabindex, and role="navigation" on both the label and the chevron beside it. An anchor with
+// no href is not focusable, so as Quarto ships it a keyboard user cannot open a band at all:
+// measured on 25 September 2026, one hundred and twenty Tab presses reached none of the four.
+// With the bands open that is invisible, because every page link is already in the tab order.
+// Collapsing them turns it into a WCAG 2.1.1 Keyboard failure at Level A, and takes seventeen
+// of the twenty-one pages out of reach.
+//
+// So the toggles are rebuilt here as the ARIA disclosure pattern: a real button role, in the
+// tab order, operated by Enter and Space, saying which band it opens and whether it is open.
+//
+// The chevron is removed from the accessibility tree rather than named. It toggles the same
+// band as the label beside it, so leaving it in gives a screen reader user two links per band
+// where one will do, and Quarto labels all four of them "Toggle section", which is the thing
+// WCAG 2.4.9 asks a link not to do. It stays on screen, because it is the affordance that says
+// the band opens; it just stops being a second announced control.
+(function () {
+  function ready(fn) {
+    if (document.readyState !== 'loading') { fn(); } else {
+      document.addEventListener('DOMContentLoaded', fn);
+    }
+  }
+
+  ready(function () {
+    var sections = document.querySelectorAll(
+      '#quarto-sidebar .sidebar-item-section > .sidebar-item-container, ' +
+      '#quarto-margin-sidebar .sidebar-item-section > .sidebar-item-container');
+
+    Array.prototype.forEach.call(sections, function (container) {
+      var label = container.querySelector('a.sidebar-item-text');
+      var chevron = container.querySelector('a.sidebar-item-toggle');
+      if (!label) { return; }
+
+      var name = (label.textContent || '').trim();
+
+      // role="navigation" is a landmark. On a control that opens and closes something it tells
+      // a screen reader the wrong thing, and it is what Quarto puts here.
+      label.setAttribute('role', 'button');
+      label.setAttribute('tabindex', '0');
+      if (name) { label.setAttribute('aria-label', name + ', open or close this group of pages'); }
+
+      // Enter and Space, which is what a button answers to. Bootstrap is already listening for
+      // the click, so the handler raises one rather than reimplementing the collapse.
+      label.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+          event.preventDefault();
+          label.click();
+        }
+      });
+
+      if (chevron) {
+        chevron.setAttribute('aria-hidden', 'true');
+        chevron.setAttribute('tabindex', '-1');
+        chevron.removeAttribute('role');
+        chevron.removeAttribute('aria-label');
+        chevron.removeAttribute('aria-expanded');
+      }
+    });
+  });
+})();
+</script>
+<script>
+// The navigation on a narrow screen: the menu under the logo, and the drawer that holds the
+// sidebar. WCAG 2.2 2.4.11 Focus Not Obscured, 2.4.3 Focus Order, 2.1.2 No Keyboard Trap and
+// 4.1.2 Name, Role, Value.
+//
+// The menu under the logo is part of the page there. It pushes the page down when it opens, and
+// nothing is underneath it, so it needs only a way to be shut again from the keyboard.
+//
+// The drawer is different. It is a panel laid over the page, so while it is open the page
+// behind it must not be reachable, or Tab walks out of the drawer into content that is covered by
+// it, which measured 21 of 21 sample points under the drawer on the first four stops in the main
+// content. So, while it is open on a narrow screen:
+//   - focus moves into it, to the button that shuts it;
+//   - everything else is inert, which takes it out of the tab order and out of what a screen reader
+//     can reach, and Tab leaves the drawer at either end rather than going round inside it;
+//   - Escape, the button inside it, and a press on the dimmed page beside it all shut it;
+//   - shutting it puts focus back on the button that opened it, and the page is live again.
+// A drawer that is shut is display: none, so none of its links is in the tab order.
+(function () {
+  var drawer = document.getElementById('quarto-sidebar');
+  var menu = document.getElementById('navbarCollapse');
+  var narrow = window.matchMedia('(max-width: 991.98px)');
+
+  function collapse(el) {
+    return window.bootstrap && window.bootstrap.Collapse
+      ? window.bootstrap.Collapse.getOrCreateInstance(el, { toggle: false }) : null;
+  }
+
+  // Quarto's own toggles open the drawer and its dimmed backdrop together, because both carry
+  // the same class. Shutting only one of them leaves the other up.
+  function drawerParts() {
+    return Array.prototype.slice.call(document.querySelectorAll('.quarto-sidebar-collapse-item'));
+  }
+
+  function opener() {
+    var button = document.querySelector('button.quarto-btn-toggle');
+    return button && button.offsetParent !== null ? button : null;
+  }
+
+  // What lies behind the drawer: everything on the page except the sidebar and its backdrop.
+  // Found by what it is not, so that a part of the page that is added later is covered too: the
+  // children of the body, and the children of the page's content wrapper, which holds the drawer.
+  function behind() {
+    var keep = function (el) {
+      return el === drawer || el.id === 'quarto-sidebar-glass' || /^(SCRIPT|STYLE|LINK)$/.test(el.tagName);
+    };
+    var out = [];
+    Array.prototype.forEach.call(document.body.children, function (el) {
+      if (keep(el)) { return; }
+      if (el.id === 'quarto-content') {
+        Array.prototype.forEach.call(el.children, function (inner) {
+          if (!keep(inner)) { out.push(inner); }
+        });
+      } else {
+        out.push(el);
+      }
+    });
+    return out;
+  }
+  function lock() { behind().forEach(function (el) { el.setAttribute('inert', ''); }); }
+  function unlock() { behind().forEach(function (el) { el.removeAttribute('inert'); }); }
+
+  function closeDrawer() {
+    drawerParts().forEach(function (el) {
+      var instance = collapse(el);
+      if (instance && el.classList.contains('show')) { instance.hide(); }
+    });
+  }
+
+  if (drawer) {
+    // The button that shuts the drawer. A keyboard has Escape and a pointer has the dimmed page,
+    // but a phone with a screen reader has neither, and the button that opened the drawer is
+    // behind it.
+    var container = drawer.querySelector('.sidebar-menu-container');
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'pb-drawer-close';
+    close.textContent = 'Close navigation';
+    close.addEventListener('click', closeDrawer);
+    if (container) { container.insertBefore(close, container.firstChild); }
+
+    // Bootstrap raises these on the element that opened or closed, and on the way up from the
+    // groups inside it, so the target is checked.
+    drawer.addEventListener('shown.bs.collapse', function (event) {
+      if (event.target !== drawer || !narrow.matches) { return; }
+      lock();
+      close.focus({ preventScroll: true });
+    });
+    drawer.addEventListener('hide.bs.collapse', function (event) {
+      if (event.target !== drawer) { return; }
+      var inside = drawer.contains(document.activeElement);
+      unlock();
+      var button = opener();
+      if (inside && button) { button.focus({ preventScroll: true }); }
+    });
+    // The drawer and its dimmed backdrop open together but not at the same moment: the drawer is
+    // shown within about 20ms and the backdrop about 160ms after. Closing in between shuts the
+    // drawer, finds the backdrop not yet shown and leaves it, so the backdrop then comes up over
+    // a page with no drawer, dimmed and taking every press. So once the drawer is shut, a backdrop
+    // that is up, or that comes up afterwards, is shut as well.
+    var glass = document.getElementById('quarto-sidebar-glass');
+    var settleGlass = function () {
+      if (!glass || drawer.classList.contains('show') || drawer.classList.contains('collapsing')) { return; }
+      if (glass.classList.contains('show') && !glass.classList.contains('collapsing')) {
+        var instance = collapse(glass);
+        if (instance) { instance.hide(); }
+      }
+    };
+    drawer.addEventListener('hidden.bs.collapse', function (event) {
+      if (event.target === drawer) { settleGlass(); }
+    });
+    if (glass) { glass.addEventListener('shown.bs.collapse', settleGlass); }
+
+    // A drawer left open while the window is made wide is no longer a drawer, and one that is
+    // still open when the window is made narrow again is one.
+    var sync = function () {
+      if (narrow.matches && drawer.classList.contains('show')) { lock(); } else { unlock(); }
+    };
+    if (narrow.addEventListener) { narrow.addEventListener('change', sync); }
+    else if (narrow.addListener) { narrow.addListener(sync); }
+  }
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key !== 'Escape' && event.key !== 'Esc') { return; }
+    // Bootstrap shuts an open Guidance menu on Escape and says so by cancelling the event.
+    if (event.defaultPrevented) { return; }
+    if (drawer && narrow.matches && drawer.classList.contains('show')) {
+      event.preventDefault();
+      closeDrawer();
+    } else if (menu && menu.classList.contains('show')) {
+      event.preventDefault();
+      var instance = collapse(menu);
+      if (instance) { instance.hide(); }
+      var toggler = document.querySelector('button.navbar-toggler');
+      if (toggler) { toggler.focus({ preventScroll: true }); }
+    }
+  });
+
+  // Bootstrap writes aria-expanded on everything that opens the sidebar, which includes the page
+  // title on a narrow screen and the backdrop. Neither is a control a screen reader should find,
+  // so the attribute is taken off again each time it is put back. The button beside the title is
+  // the control, and it keeps its state.
+  var strip = function (el) {
+    if (!el) { return; }
+    el.removeAttribute('aria-expanded');
+    new MutationObserver(function () { el.removeAttribute('aria-expanded'); })
+      .observe(el, { attributes: true, attributeFilter: ['aria-expanded'] });
+  };
+  strip(document.querySelector('a.flex-grow-1.no-decor'));
+  strip(document.getElementById('quarto-sidebar-glass'));
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -486,7 +1576,8 @@ ul.task-list li input[type="checkbox"] {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -495,8 +1586,69 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -510,6 +1662,7 @@ ul.task-list li input[type="checkbox"] {
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -521,140 +1674,6 @@ ul.task-list li input[type="checkbox"] {
         config.onUntrigger = onUntriggerFn;
       }
       window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
     }
         let selectedAnnoteEl;
         const selectorForAnnotation = ( cell, annotation) => {
@@ -672,44 +1691,54 @@ ul.task-list li input[type="checkbox"] {
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -769,59 +1798,46 @@ ul.task-list li input[type="checkbox"] {
             }
           });
         }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<ul>
-<li><a href="./accessibility.html">Accessibility</a></li>
-<li><a href="mailto:analyticalassurance@nhsbsa.nhs.uk">Contact</a></li>
-<li><a href="https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook">GitHub</a></li>
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./guidance/09-resources/r3-who-to-ask.html">
+<p>Getting help</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./accessibility.html">
+<p>Accessibility</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./guidance/09-resources/r1-glossary.html">
+<p>Glossary</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="mailto:analyticalassurance@nhsbsa.nhs.uk">
+<p>Contact the analytical assurance team</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook">
+<p>This playbook on GitHub</p>
+</a>
+  </li>  
 </ul>
-<p><img src="./static/ogl3-logo.svg" height="17" width="41" focusable="false">&nbsp; All content is available under the <a class="nhsuk-footer__list-item-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.</p>
-</div>   
+    </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
+<p><img src="./static/ogl3-logo.svg" alt="" height="17" width="41">&nbsp; All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.</p>
+</div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
