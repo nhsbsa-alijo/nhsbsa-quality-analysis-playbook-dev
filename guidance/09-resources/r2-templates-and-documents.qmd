@@ -1,0 +1,148 @@
+---
+title: "R2. NHSBSA templates and documents"
+description: "The templates, the decision tool and the NHSBSA documents used."
+---
+## NHSBSA templates
+
+All ten are in the [Analytical Quality Assurance Templates folder]({{< var templates-folder >}}), with
+the [Analytical Assurance Decision Tool spreadsheet]({{< var decision-tool >}}). **Opening them needs an
+NHSBSA account with access to the Analytical Quality and Assurance site.** If you cannot reach them,
+write to the analytical assurance mailbox in [who to ask](r3-who-to-ask.qmd).
+
+Each template explains what goes in each of its sections. Every template ends with ownership, review and approval.
+
+| Template | What it holds | Where the playbook uses it |
+|---|---|---|
+| [Scope]({{< var template-scope >}}) | Purpose and context, decisions supported, scope and boundaries, inputs and data, outputs, assumptions and limitations, resources, risks and mitigations | [Phase 1](../01-engagement-and-scoping/index.qmd) |
+| [Specification]({{< var template-specification >}}) | Customer and analytical requirements, inputs and data, information governance and security, outputs, accuracy and performance, testing and validation, acceptance criteria | [Phase 1](../01-engagement-and-scoping/index.qmd) and [Phase 2](../02-design/index.qmd) |
+| [Analysis plan]({{< var template-analysis-plan >}}) | Approach and alternatives considered, solution design, delivery plan and milestones, dependencies, monitoring, communication, roles, resources, assurance approach, change management | [Phase 2](../02-design/index.qmd), the design and plan |
+| [Quality assurance plan]({{< var template-qa-plan >}}) | The completed Decision Tool and what set the level, QA strategy, roles, activities and schedule, verification and validation, QA evidence and records, findings and actions, changes affecting assurance, QA status | [Phase 2](../02-design/index.qmd), the assurance plan, and [Phase 3](../03-analysis/index.qmd), the quality assurance log |
+| [Checklist for building an analytical solution]({{< var template-building-checklist >}}) | Checks for structure, data and assumptions, input, processing and output controls, sensitivity, scenario and stress testing, independent review, and published outputs | [Business Critical analysis, step 5](../08-business-critical/index.qmd#step-5-do-the-work-to-the-enhanced-standard), document 7 |
+| [Technical guide]({{< var template-technical-guide >}}) | Solution design, data and inputs, methodology, outputs, technical environment, maintenance and change, testing, known issues, ownership and support | [Business Critical analysis, step 5](../08-business-critical/index.qmd#step-5-do-the-work-to-the-enhanced-standard), document 8 |
+| [User guide]({{< var template-user-guide >}}) | Intended users, access and setup, operating instructions, outputs and interpretation, routine checks, risks and appropriate use, support | [Business Critical analysis, step 5](../08-business-critical/index.qmd#step-5-do-the-work-to-the-enhanced-standard), document 9 |
+| [Document control and information governance]({{< var template-document-control >}}) | Document information, security classification, sensitive data, access controls, retention and disposal | [Business Critical analysis, step 5](../08-business-critical/index.qmd#step-5-do-the-work-to-the-enhanced-standard) |
+| [Knowledge management]({{< var template-knowledge-management >}}) | Where everything is kept and how it is organised, a documentation inventory, access, maintenance, handover and continuity | [Phase 4](../04-delivery-and-sign-off/index.qmd), archiving, and Business Critical step 5 |
+| [Version control]({{< var template-version-control >}}) | The versioning approach, version history with the reason for each change, the current version, outstanding changes | [Phase 3](../03-analysis/index.qmd), logging changes, and Business Critical step 5 |
+
+: The NHSBSA templates, what each holds and where the playbook uses it
+
+The Analysis plan and the Checklist for building an analytical solution are written for Business
+Critical analysis. The others are written for any analysis or model.
+
+Create a template in place rather than downloading it, so that it is versioned and can be linked
+from the output.
+
+### The project record and the templates {#the-project-record-and-the-templates}
+
+[The project record](../07-deciding-your-assurance-level/what-your-level-requires.qmd#what-to-record)
+is what this playbook asks you to keep. If you use NHSBSA's templates, the table shows which template section holds each part of it.
+
+| Section of the project record | Where it goes in the templates |
+|---|---|
+| 1. Header | The title block of each template: name, date and version |
+| 2. The question | Scope: purpose and context, decisions supported, scope and boundaries |
+| 3. Data | Specification: inputs and data requirements, information governance and security |
+| 4. Method | Analysis plan: project approach |
+| 5. Assumptions | Scope: assumptions and limitations. For Business Critical work, the assumptions register in the quality assurance appraisal |
+| 6. Uncertainty | Specification: accuracy and performance requirements |
+| 7. Decision log | Analysis plan: change management, and Version control: version history |
+| 8. Assurance and sign-off | Quality assurance plan: QA evidence and records, and review and approval |
+| 9. Lessons learned | No template section. Keep them in the project record |
+
+: Which template section holds each part of the project record
+
+The quality assurance statement has no template. [R5](r5-quality-assurance-statement.qmd) says what
+goes in it.
+
+## The Business Critical documentation stack {#the-business-critical-documentation-stack}
+
+Use this section with step 5 of [Business Critical analysis](../08-business-critical/index.qmd). It says what each document holds and how the documents are completed, scored and held.
+
+| No. | Document | What it holds |
+|-----|----------------------|-------------------------------------|
+| 1 | Analysis plan | See the template, in the table above |
+| 2 | Scope | See the template |
+| 3 | Analytical Assurance Decision Tool spreadsheet | Whether the work is Business Critical, and its level. Appended to the quality assurance plan, as that template asks |
+| 4 | Specification | See the template |
+| 5 | Quality assurance plan | See the template. Each action is tied to the appraisal reference code that raised it |
+| 6 | Quality assurance appraisal, basic information | Model name, identifier and contact, and the four named owners: the Analysis Senior Responsible Officer, the Lead Assurer, the analyst and the commissioner |
+| 7 | The analysis or model itself | No template. Use the Model Guidance Document and the checklist for building an analytical solution. Use what the build and testing show to fill the data, assumptions and risk registers |
+| 8 | Technical guide | See the template |
+| 9 | User guide | See the template |
+| 10 | Quality assurance appraisal, assurance review | Six worksheets scored, with a reason for each rating and the actions it raises |
+| 11 | Quality assurance sign-off | The Assurance Report worksheet: what was reviewed, the statement, the risks and the approval |
+
+: The eleven Business Critical documents and what each holds
+
+
+The quality assurance appraisal is one workbook of twelve worksheets. It includes the assumptions register and the risk and issue log, as the Scope template says. The worksheets are completed at three points in the life of the analysis.
+
+- Basic information is completed as document 6, as soon as the model has a name.
+- The analysis or model review is completed while the model is built and tested.
+- The assurance review is completed as document 10, by the critical friend as Lead Assurer, with the analyst.
+
+The assurance review scores six areas: documentation, governance and oversight, structure and clarity, data and assumptions, verification, and validation. Outputs is a seventh area that NHSBSA has still to define.
+
+Every requirement carries a reference code. The code links each action in the quality assurance plan to the criterion that raised it. For example, the Scope document is D1.
+
+[Business Critical analysis, step 5](../08-business-critical/index.qmd#step-5-do-the-work-to-the-enhanced-standard) asks for each action to be given a priority. The three priorities mean:
+
+- Must is essential to address a significant risk, issue or control weakness.
+- Should is recommended to improve quality, robustness or assurance.
+- Could gives additional benefit, but is not needed for the analysis to be acceptable.
+
+The documentation held centrally by the Analytical Quality and Assurance function is the authoritative copy, and the function monitors Business Critical assurance activities. Analysts may keep working copies locally.
+
+Naming each file with the document type first means the stack can be recognised at a glance, for example `Scope_Specification_AnalysisName`.
+
+When a review raises a question about the method, go back to the technical guide, the Specification or the Scope. NHSBSA treats this as a normal part of maintaining a well-governed analysis.
+
+Quality assurance continues after the analysis is judged fit for purpose, because data, methods, assumptions and requirements change. The actions are in [Business Critical analysis, step 8](../08-business-critical/index.qmd#step-8-keep-it-true-after-first-use).
+
+## NHSBSA internal documents
+
+
+Some of the sources named at the foot of these pages are NHSBSA's own documents rather than
+published standards. They are held on the NHSBSA SharePoint and **need an NHSBSA account**.
+
+| Document | What the playbook uses it for |
+|---|---|
+| Analytical Assurance Decision Tool, 13 October 2026 | The Analytical Assurance Decision Tool: the impact and likelihood scales, the matrix, and the worked examples. [Deciding your assurance level](../07-deciding-your-assurance-level/index.qmd) |
+| NHSBSA Business Critical Analysis: Navigating the Assurance Journey, 17 September 2026 | The documentation stack. [Business Critical analysis](../08-business-critical/index.qmd) |
+| NHSBSA Analytical operating model and implementation plan, Summer 2026 | What NHSBSA counts as an analytical output, and the range it covers. [Check the playbook applies](../07-deciding-your-assurance-level/check-it-applies.qmd) |
+| NHSBSA Analytical Risk Assessment and Quality Assurance Framework | What each risk rating asks for. [Deciding your assurance level](../07-deciding-your-assurance-level/index.qmd) |
+
+: NHSBSA internal documents and what the playbook uses each for
+
+If you cannot reach one of these, write to the analytical assurance mailbox in
+[who to ask](r3-who-to-ask.qmd).
+
+Store all analytical documentation centrally.
+
+## NHSBSA guidance
+
+
+| Resource | For |
+|---|---|
+| [NHSBSA Analytical Code Assurance Playbook](https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook) | Version control, testing, peer review, documentation and open sourcing of analytical code |
+| [NHSBSA Data Science Playbook](https://nhsbsa-data-analytics.github.io/nhsbsa-data-science-playbook) | The workflow for a Data Science initiative, from problem definition to wrap up |
+| [NHSBSA Data Visualisation Standards](https://nhsbsa.github.io/nhsbsa-digital-playbook/data/data-visualisation/) | Charts, tables and dashboards, and how to label them so they can be read |
+| [NHSBSA Open Data Standards](https://github.com/nhsbsa-data-analytics/open-data-standards) | How NHSBSA publishes open data |
+| [Coffee and Coding](https://github.com/nhsbsa-data-analytics/coffee-and-coding) | Monthly hands-on sessions. Materials from every session since 2021 |
+
+: NHSBSA guidance and what each is for
+
+## NHSBSA statistics policies
+
+
+These bind official and national statistics. The behaviour they describe is worth following for any
+published output. [Phase 4, delivery, communication and sign-off](../04-delivery-and-sign-off/index.qmd) says where each one applies.
+
+Both are public, so you can read them without an NHSBSA account.
+
+| Policy | For |
+|---|---|
+| [NHSBSA Revisions and Corrections Policy (PDF)](https://www.nhsbsa.nhs.uk/sites/default/files/2021-05/Revisions_and_Corrections_Policy_v002.pdf) | What counts as a revision and what counts as a correction, how errors are graded by consequence, and who decides |
+| [NHSBSA Statistical Disclosure Control protocol (PDF)](https://www.nhsbsa.nhs.uk/sites/default/files/2020-10/nhsbsa-sdc-protocol.pdf) | Thresholds and methods for protecting small counts in a published output |
+
+: NHSBSA statistics policies and what each is for

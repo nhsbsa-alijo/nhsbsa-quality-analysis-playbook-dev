@@ -1,7 +1,11 @@
-# How to contribute
+---
+title: "How to contribute"
+description: "How to raise an issue or send a pull request, and how to add or change a page."
+title-block-banner: true
+---
 
 Hi there! 
-Thank you for considering contributing to the [NHSBSA Producing Quality Analysis Playbook](https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/). 
+Thank you for considering contributing to the [published NHSBSA Producing Quality Analysis Playbook site](https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/). 
 The Playbook is meant to serve the D&A community, so contributions from community members themselves are super important in making this a reality! 
 
 ## Creating an issue
@@ -14,7 +18,7 @@ Please submit new contributions via a [pull request][pr]:
 
 1. [Fork][fork] or clone the repository
 1. If you want to run the page on your machine, configure and install the dependencies. 
-See the [README](./README.md) for details.
+See the [README](https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook#readme) for details.
 1. Create a new branch: (e.g. `git checkout -b my-branch-name`)
 1. [Make your change](#getting-started-with-development)
 1. Push to your fork and [submit a pull request][pr]
@@ -27,9 +31,10 @@ You may receive some feedback and suggested changes before it can be approved an
 - If you are making visual changes, include a screenshot of what the affected element looks like, both before and after.
 <!-- TODO: add a style guide -->
 <!-- - Follow the [style guide][style]. -->
+- Give every table a caption: a line that starts with `: ` directly under the table, after a blank line. A first column of bold labels becomes row headers on its own.
 - Keep your change as focussed as possible. 
 If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
-- Write [good commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
+- Write [good commit messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 
 ## Getting started with development
 
@@ -41,35 +46,68 @@ The **easiest way is just to open the repo in [Github Codespaces](https://github
 If you don't want to use Github codespaces (or can't because it's blocked, or you've run out of credits), then you can make changes to the repo locally on your machine.
 
 ### Installing dependencies
-See the [README](./README.md) for guidance on installing the dependencies and getting started with development.
+See the [README](https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook#readme) for guidance on installing the dependencies and getting started with development.
 
 ### Adding or editing content
-#### To add a new page to within the existing structure
-1. Navigate to the relevant subfolder within `guidance` (e.g. `guidance/03-responsibilities/pages`)
-1. Add a [qmd](https://quarto.org/docs/get-started/hello/rstudio.html) file with the following header fields:
-    ```
-    ---
-    title: "This is the title of your page"
-    description: "This is a brief description of your page"
-    image-alt: "This text will show if your image can't be displayed"
-    image: <name of a .jpg file stored in the same subfolder to use for the card>
-    ---
-    ```
-1. Add the content below the header using standard markdown syntax.
-1. A link to the page will be added as a card on the landing page. 
-If you want to show an image on the card, add a jpeg file to the same subfolder as the content and include the name in the header fields as above.
+Each section is one directory under `guidance`, numbered so the order is visible, holding a single
+`index.qmd`. The directory name carries the number, so `guidance/07-deciding-your-assurance-level/`
+is section 7. A section with more than one page keeps them beside its `index.qmd`, which is what
+the roles directory and the assurance level directory both do.
+
+One directory is deliberately not numbered. `guidance/analytical-cycle/` is the front page for the
+five phases rather than a section of its own, and a number on it would say it was a sixth phase.
+
+Three things are named in one place each, and all three need updating together when a section is
+added or renamed. Miss one and the page still builds, so nothing tells you:
+
+| Item | Where |
+|---|---|
+| Whether the page is rendered at all | the `render:` list in `_quarto.yml` |
+| Where it appears in the left sidebar | the `sidebar:` section of `_quarto.yml` |
+| Where it appears in the Guidance menu | the `navbar:` section of `_quarto.yml`, which names the spine only, so a page can be correctly absent from it |
+
+: The three places that name a page
+
+#### To edit an existing page
+1. Open the `index.qmd` in that section's directory and edit it as markdown.
+1. Text that belongs on more than one page lives in `guidance/_partials/` and is pulled in with
+   `{{< include /guidance/_partials/name.qmd >}}`. Edit the partial, not the copies. The include
+   path starts from the project root, because a partial is included at more than one depth.
 1. Once you are happy with your changes [submit a pull request!](#submitting-a-pull-request)
 
-#### To add a new page within a new section
-1. Create the a subfolder within `guidance` and name it appropriately (e.g. `04-business-critical-models`). Note that the sections will be ordered in the dropdown on the website according to the numbers in front of the subfolders (i.e. first `01-` then `02-` and so on)
-1. Add an `index.qmd` file to the subfolder (you can use one of the existing files as an example!)
-1. Follow the steps above to add the new page within the section you've just created.
+#### To add a new section
+1. Create a subfolder within `guidance`, numbered so it sorts where you want it (e.g.
+   `14-something-new`).
+1. Add an `index.qmd` to it with this header:
+    ```
+    ---
+    title: "The title of your page"
+    description: "One sentence saying what the page is for"
+    ---
+    ```
+   The title, the sidebar label and the navbar label should all say the same thing, so a reader
+   arrives at the page they expected. The description is the browser meta description.
+1. Add the content below the header using standard markdown syntax.
+1. Add the page in all four places in the table above.
+1. Render locally with `quarto render` and check the page appears in the sidebar, in the menu and
+   in the contents table.
 1. Once you are happy with your changes [submit a pull request!](#submitting-a-pull-request)
+
+#### Before you open the pull request
+Run the checks. They are quick and they assert things that are easy to break without noticing:
+
+```
+quarto render && bash checks/run-all.sh
+```
+
+That runs all of them. Several read the built site, so render first. If you only want the two
+that most often catch a new page, they are `checks/accessibility.py` and `checks/links.py`, and
+the first needs a render.
 
 ## Resources
 
-- [Contributing to Projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
-- [Using Pull Requests](https://help.github.com/articles/using-pull-requests/)
+- [Contributing to Projects](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)
+- [Using Pull Requests](https://docs.github.com/en/pull-requests/reference/pull-requests)
 - [GitHub Help](https://help.github.com)
 
 [fork]: https://github.com/nhsbsa-data-analytics/nhsbsa-quality-analysis-playbook/fork

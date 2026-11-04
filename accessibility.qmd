@@ -1,89 +1,127 @@
 ---
 title: "Accessibility"
+description: "How it meets WCAG 2.2, what is untested, and reporting a problem."
 title-block-banner: true
 ---
 
-## Accessibility statement for NHSBSA Producing Quality Analysis Playbook
+## Accessibility statement for the NHSBSA Producing Quality Analysis Playbook
 
-This accessibility statement applies to the NHSBSA Producing Quality Analysis Playbook website. 
+This statement applies to the Producing Quality Analysis Playbook. It does not cover the other
+NHSBSA sites and playbooks linked from it, which publish their own statements.
 
-This website is run by the NHS Business Services Authority (NHSBSA). We want as many people as possible to be able to use this website. For example, that means you should be able to:  
-  
-- zoom in up to 400% without the text spilling off the screen
-- listen to most of the website using a screen reader (including the most recent version of NVDA)
-- navigate most of the website using just a keyboard or speech recognition software (Dragon) 
-- change colours, contrast levels and fonts using browser or device settings
+We want as many people as possible to be able to use this playbook. It is built to meet the Web
+Content Accessibility Guidelines (WCAG) 2.2 at level AA, and meets several level AAA criteria as
+well.
 
-We’ve also made the website text as simple as possible to understand.
+## What we have done
 
-[AbilityNet has advice on making your device easier to use](https://mcmw.abilitynet.org.uk/) if you have a disability.
+The site is built from text, so its content is headings, paragraphs, lists, tables and links, not
+pictures of them. Each diagram is described in words.
 
-### How accessible this website is
+- Every page has a title, one main heading, and headings that never skip a level
+- A skip link is the first thing a keyboard reaches, and takes you to the page itself. The sidebar
+  and the navigation bar show which page you are on in words and in shape, not in colour alone
+- Links say where they go. Source numbers link to a Sources list at the foot of the page, and
+  nothing pops up over the text
+- Every table has a caption and a header row. Where a first column names each row, it is marked as
+  row headers, so a screen reader can say which row a cell is in
+- On a phone a table of three or more columns is shown one row at a time, each cell under the name
+  of its column, and is still announced as a table
+- The glossary has a filter box. It says how many entries match as you type
+- Text reflows to one column at 320 pixels wide, and at 400 percent zoom, without sideways
+  scrolling. On a phone or a short window the bars stay in the page and are not pinned over it
+- On a phone the sidebar takes focus when it opens, gives it back when it closes, and puts the page
+  behind it out of reach
+- Every control that takes keyboard focus shows a ring of two colours, so that it can be seen on a
+  light or a dark ground
+- Each diagram has a text description under it, and opens on its own page as an SVG that scales to
+  any zoom. On a narrow screen it scrolls sideways inside its own box, as WCAG 1.4.10 allows
+- Animation is switched off for anyone who has asked their device for less motion
+- Text and interface colours meet the required contrast, and nothing relies on colour alone
 
-We know some parts of this website are not fully accessible, as: 
-  
-- navigation by tabbing does not always follow a left-to-right, top-to-bottom visual order
-- zooming can only be done to a limited extent due to content becoming unviewable 
-- the playbook has links to external PDF or Excel documents and websites which may have accessibility issues
+The playbook can also be built as a tagged PDF, an editable Word file and a tour of the site in
+photographs. These are alternative views of the web version, made on request, and they are not the
+published playbook. Each has a language, a title, an outline or heading styles, alternative text for
+every picture, and captions and header rows on every table.
 
-### How to request content in an accessible format
+## What we have checked, and how
 
-If you need information on this website in a different format such as accessible PDF, large print, easy read, audio recording or braille, you can contact us by:
-  
-Email: [accessibility@nhsbsa.nhs.uk](mailto:accessibility@nhsbsa.nhs.uk) 
+These claims are checked against the built pages every time the site is rebuilt. An accessibility
+engine tests every page against WCAG 2.0, 2.1 and 2.2 at levels A and AA, on a laptop, a phone and a
+phone at 400 percent zoom. Our own checks then test what an engine cannot see, such as where the
+skip link lands, whether Tab ever leaves a control off screen, and whether every focus ring can be
+seen, from a photograph of the screen.
 
-We’ll consider your request and get back to you in 5 working days.
+## Where we go beyond level AA
 
-This email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.
+Four level AAA criteria are met and checked the same way.
 
-### Reporting accessibility problems with this website
+| Criterion | What it asks | What the site does |
+|---|---|---|
+| 1.4.6 Contrast (Enhanced) | 7:1 for body text, 4.5:1 for large text | Links are NHS Dark Blue at 11.85:1, quiet text is NHS Dark Grey at 7.75:1, and white on the title banner clears 7:1 |
+| 2.5.5 Target Size (Enhanced) | Anything you click or tap is at least 44 by 44 pixels | Navigation, footer, contents and card links, and the menu and sidebar buttons, are 44 pixels each way. A link in a sentence takes the exception for inline targets |
+| 2.4.9 Link Purpose (Link Only) | Every link makes sense on its own | No link reads "click here" or "read more", or uses a web address as its text. Every link is checked on every build |
+| 2.4.10 Section Headings | Content is organised under headings | Every page of any length carries headings, so the on-this-page list is a usable route |
 
-We’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, you can contact us by:
-  
-  Email: [accessibility@nhsbsa.nhs.uk](mailto:accessibility@nhsbsa.nhs.uk) 
+: The level AAA criteria the site meets, what each asks and what the site does
 
-This email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.
+## Where we do not meet level AAA
 
-### Contact us
+We do not claim level AAA for the whole site. The W3C advises against requiring it as a general
+policy, because some content cannot meet every AAA criterion. Two are out of reach for guidance of
+this kind, and a third is not claimed.
 
-For all queries not accessibility related, you can contact us by:
-  
-Email: [analyticalassurance@nhsbsa.nhs.uk](mailto:analyticalassurance@nhsbsa.nhs.uk)
+**3.1.4 Expansion of short forms** asks that the meaning of every short form is available. Most are
+spelled out where they first appear, and a few, such as ARIMA, are not.
 
-### Enforcement procedure
+**3.1.5 Reading Level** asks for text a person with lower secondary education can understand, or a
+simpler version. The Resource pages cite clause numbers from GovS 010 and the AQuA Book and use the
+vocabulary of analytical assurance, because their readers need the exact terms. The glossary in
+Resources is a partial answer.
 
-The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). 
+**1.4.8 Visual Presentation** asks, among other things, for lines of no more than 80 characters.
+WCAG sets no limit on line length at level AA, which is the level the site meets here. The text
+column is set for reading, at about 67 characters on an ordinary line, and grows with the reader's
+text size. Some lines are longer.
 
-If you’re not happy with how we respond to your complaint, [contact the Equality Advisory and Support Service (EASS)](https://www.equalityadvisoryservice.com/).
+## What we have not tested
 
-### Technical information about this website’s accessibility 
+No screen reader, magnifier or speech input testing has been carried out against the published
+site, and none on a real phone or tablet. What has been tested is the markup and what a browser
+shows, by an accessibility engine, by our own measurements and by walking the keyboard through the
+site at several screen sizes. Automated checks find only the faults they are written to look for.
 
-The NHSBSA is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+Some corrections, including the skip link and the names of the navigation landmarks, are made by a
+script when the page loads. With scripts switched off the pages still read in order, but those
+corrections are missing.
 
-#### Compliance status 
+Parts of this site may still not be fully accessible, and this statement describes the work done
+rather than a tested result. If you find a problem, we want to hear about it.
 
-This website is partially compliant with the [Web Content Accessibility Guidelines version 2.2](https://www.w3.org/TR/WCAG22/) AA standard, due to the non-compliances listed below.
+## Reporting a problem
 
-### Non-accessible content 
+If you find a problem that is not listed here, or you need content in a different format, write to
+[analyticalassurance@nhsbsa.nhs.uk](mailto:analyticalassurance@nhsbsa.nhs.uk). Tell us the page,
+what you were trying to do, and what happened.
 
-The content listed below is non-accessible for the following reasons.
+## Enforcement procedure
 
-#### Non-compliance with the accessibility regulations
+The Equality and Human Rights Commission is responsible for enforcing the Public Sector Bodies
+(Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018. If you are not happy with
+how we respond to your complaint, contact the
+[Equality Advisory and Support Service](https://www.equalityadvisoryservice.com/).
 
-Navigation by tabbing does not always follow a left-to-right, top-to-bottom visual order. This fails WCAG 2.2 success criterion 2.4.3 (Focus Order).
+## Preparation of this statement
 
-Zooming can only be done to a limited extent due to content becoming unviewable. This fails WCAG 2.2 success criterion 1.4.10 (Reflow).
+::: {.callout-note title="To be completed before publication" appearance="minimal"}
+<br>
+Three things are NHSBSA's to set before this statement goes live, and are deliberately not filled
+in here:
 
-The report has links to external PDF or Excel documents and websites which may have accessibility issues. This fails WCAG 2.2 success criteria 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships) and 4.1.2 (Name, role, value).
-
-We plan to fix these issues. When we publish new content, we’ll make sure it meets accessibility standards.
-
-### What we’re doing to improve accessibility 
-
-We’re committed to making sure this website is compliant to WCAG 2.2 ‘AA’ standard.
-
-Our accessibility compliance statement will be reviewed regularly. Every newly released website will be designed, built, and tested to meet ‘AA’ standards by default.
-
-### Preparation of this accessibility statement
-
-This statement was originally prepared on 30 October 2026. It was last reviewed on 30 October 2026.
+- the **compliance status**, in the Regulations' own terms: fully compliant, partially compliant, or
+  not compliant with WCAG 2.2 level AA
+- the date this statement was **prepared**, and the date the site was last **tested**
+- confirmation that
+  [analyticalassurance@nhsbsa.nhs.uk](mailto:analyticalassurance@nhsbsa.nhs.uk) is the right mailbox
+  for accessibility reports, rather than a central NHSBSA accessibility contact
+:::
